@@ -90,6 +90,6 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
-    <string name="smiley_a">"\u0102"</string>
+    <string name="smiley_a">"\u0102, \u0103"</string>
     <string name="a_with_hat">"Â, â"</string>
 </resources>

@@ -2,7 +2,6 @@ package com.shaneydev.tieng;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -40,16 +39,25 @@ public class TiengListActivity extends AppCompatActivity {
             btnA2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                 // Code here executes on main thread after user presses button
-                    MediaPlayer mediaPlayer = MediaPlayer.create(TiengListActivity.this, Settings.System.DEFAULT_RINGTONE_URI);
+                    MediaPlayer mediaPlayer = MediaPlayer.create(TiengListActivity.this, R.raw.smiley_a);
                     mediaPlayer.start();
                 }
             });
         Button btnA3 = (Button)findViewById(R.id.button_A_hat);
-            btnA3.setOnClickListener(new View.OnClickListener() {
-                public void onClick(View v) {
-                // Code here executes on main thread after user presses button
-                }
-            });
+                btnA3.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        // Code here executes on main thread after user presses button
+                        MediaPlayer mediaPlayer = MediaPlayer.create(TiengListActivity.this, R.raw.a_hat);
+                        mediaPlayer.start();
+                    }
+                });
+                btnA3.setOnLongClickListener(new View.OnLongClickListener() {
+                    public boolean onLongClick(View v) {
+                        MediaPlayer mediaPlayer = MediaPlayer.create(TiengListActivity.this, R.raw.regular_a);
+                        mediaPlayer.start();
+                        return true;
+                    }
+                });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
