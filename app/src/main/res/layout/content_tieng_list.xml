@@ -29,12 +29,12 @@
             android:id="@+id/button_A_smiley"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="R.id.smiley_A"/>
+            android:text="@string/smiley_a"/>
         <Button
             android:id="@+id/button_A_hat"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="'A' hat" />
+            android:text="@string/a_with_hat" />
 
 
     </TableLayout>

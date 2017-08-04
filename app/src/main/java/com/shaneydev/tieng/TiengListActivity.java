@@ -29,6 +29,13 @@ public class TiengListActivity extends AppCompatActivity {
                     mediaPlayer.start();
                 }
              });
+            btnA1.setOnLongClickListener(new View.OnLongClickListener() {
+                public boolean onLongClick(View v) {
+                    MediaPlayer mediaPlayer = MediaPlayer.create(TiengListActivity.this, R.raw.regular_a);
+                    mediaPlayer.start();
+                    return true;
+                }
+            });
         Button btnA2 = (Button)findViewById(R.id.button_A_smiley);
             btnA2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
