@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.shaneydev.tieng.TonesListActivity"
+    tools:showIn="@layout/activity_tones_list">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1" >
+
+        <Button
+            android:id="@+id/button_A_reg_flat"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="A, a" />
+        <Button
+            android:id="@+id/button_A_reg_up"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/smiley_a"/>
+        <Button
+            android:id="@+id/button_A_reg_down"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/a_with_hat" />
+
+        <Button
+            android:id="@+id/button_A_reg_hoi"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="A, a" />
+        <Button
+            android:id="@+id/button_A_reg_wave"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/smiley_a"/>
+        <Button
+            android:id="@+id/button_A_reg_dot"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/a_with_hat" />
+
+    </TableLayout>
+
+</android.support.v4.widget.NestedScrollView>

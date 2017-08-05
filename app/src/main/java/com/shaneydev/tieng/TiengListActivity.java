@@ -1,5 +1,8 @@
 package com.shaneydev.tieng;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -23,38 +26,39 @@ public class TiengListActivity extends AppCompatActivity {
         Button btnA1 = (Button)findViewById(R.id.button_A_regular);
              btnA1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                // Code here executes on main thread after user presses button
-                    MediaPlayer mediaPlayer = MediaPlayer.create(TiengListActivity.this, R.raw.regular_a);
-                    mediaPlayer.start();
+                    playSound(R.raw.regular_a);
                 }
              });
             btnA1.setOnLongClickListener(new View.OnLongClickListener() {
                 public boolean onLongClick(View v) {
-                    MediaPlayer mediaPlayer = MediaPlayer.create(TiengListActivity.this, R.raw.regular_a);
-                    mediaPlayer.start();
+                    Intent moveToTonesView = new Intent(TiengListActivity.this, TonesListActivity.class);
+                    startActivity(moveToTonesView);
                     return true;
                 }
             });
+
         Button btnA2 = (Button)findViewById(R.id.button_A_smiley);
             btnA2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                // Code here executes on main thread after user presses button
-                    MediaPlayer mediaPlayer = MediaPlayer.create(TiengListActivity.this, R.raw.smiley_a);
-                    mediaPlayer.start();
+                    playSound(R.raw.smiley_a);
                 }
             });
+//               btnA1.setOnLongClickListener(new View.OnLongClickListener() {
+//                public boolean onLongClick(View v) {
+//                    return true;
+//                }
+//            });
+
+
         Button btnA3 = (Button)findViewById(R.id.button_A_hat);
                 btnA3.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
-                        // Code here executes on main thread after user presses button
-                        MediaPlayer mediaPlayer = MediaPlayer.create(TiengListActivity.this, R.raw.a_hat);
-                        mediaPlayer.start();
+                        playSound(R.raw.a_hat);
                     }
                 });
                 btnA3.setOnLongClickListener(new View.OnLongClickListener() {
                     public boolean onLongClick(View v) {
-                        MediaPlayer mediaPlayer = MediaPlayer.create(TiengListActivity.this, R.raw.regular_a);
-                        mediaPlayer.start();
+                        playSound(R.raw.regular_a);
                         return true;
                     }
                 });
@@ -67,6 +71,16 @@ public class TiengListActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+    }
+
+    private void genericOnClickListener() {
+        // Think if there's a possible solution to refactor all the onClicks in one place, passing in the button obj and sound URI
+    }
+
+    private void playSound(int soundFile) {
+        MediaPlayer mp = MediaPlayer.create(TiengListActivity.this, soundFile);
+        mp.start();
     }
 
     @Override

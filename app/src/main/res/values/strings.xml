@@ -92,4 +92,10 @@
     <string name="action_settings">Settings</string>
     <string name="smiley_a">"\u0102, \u0103"</string>
     <string name="a_with_hat">"Â, â"</string>
+    <string name="title_activity_tones_list">TonesListActivity</string>
+    <string name="a_reg_up">"\u00E1"</string>
+    <string name="a_reg_down">"\u00e0"</string>
+    <string name="a_reg_hoi">"\u1ea3"</string>
+    <string name="a_reg_wave">"\u00E3"</string>
+    <string name="a_reg_dot">"\u1EA1"</string>
 </resources>
