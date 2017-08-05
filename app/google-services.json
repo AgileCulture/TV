@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "391361033689",
+    "firebase_url": "https://tiengauth.firebaseio.com",
+    "project_id": "tiengauth",
+    "storage_bucket": "tiengauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391361033689:android:04b26f34b32a0d5d",
+        "android_client_info": {
+          "package_name": "com.shaneydev.tieng"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391361033689-6hmr7a6t2dgtarnim2ll7rjnm7a2trgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE3p53jmFkIYxFmU0r7AG1_QexM0TTXpU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
