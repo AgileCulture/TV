@@ -63,6 +63,9 @@ public class TonesListActivity extends AppCompatActivity {
             }
         });
 
+
+        
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
