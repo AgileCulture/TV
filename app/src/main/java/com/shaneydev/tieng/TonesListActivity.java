@@ -1,5 +1,6 @@
 package com.shaneydev.tieng;
 
+import android.content.Context;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,9 +10,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
 import static com.shaneydev.tieng.R.*;
 
 public class TonesListActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +26,7 @@ public class TonesListActivity extends AppCompatActivity {
         setContentView(layout.activity_tones_list);
         Toolbar toolbar = (Toolbar) findViewById(id.toolbar);
         setSupportActionBar(toolbar);
+
 
         Button btnA1 = (Button)findViewById(id.button_A_reg_flat);
         btnA1.setOnClickListener(new View.OnClickListener() {
@@ -64,6 +72,8 @@ public class TonesListActivity extends AppCompatActivity {
         });
 
 
+        // Import the Chu list without tones and make a button for each using foreach loop
+
         
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(id.fab);
@@ -80,4 +90,6 @@ public class TonesListActivity extends AppCompatActivity {
         MediaPlayer mp = MediaPlayer.create(TonesListActivity.this, soundURI);
         mp.start();
     }
+
+
 }
